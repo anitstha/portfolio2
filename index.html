@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anit Shrestha | Frontend Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-dark text-light overflow-x-hidden">
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="glow-pulse glow-1"></div>
+        <div class="glow-pulse glow-2"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;ANIT/&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative">
+        <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+            <div class="hero-content">
+                <p class="text-accent text-lg mb-4 animate-fade-in-up">Hello, I'm</p>
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up delay-100">
+                    <span class="name-gradient">Anit Shrestha</span>
+                </h1>
+                <p class="text-2xl md:text-3xl text-gray-400 mb-8 animate-fade-in-up delay-200">
+                    I am a <span class="typing-text"></span>
+                </p>
+                <p class="text-gray-400 max-w-lg mb-8 animate-fade-in-up delay-300">
+                    Passionate Frontend Developer crafting beautiful, performant, and user-friendly web experiences with modern technologies.
+                </p>
+                <div class="flex gap-4 animate-fade-in-up delay-400">
+                    <a href="#projects" class="btn btn-primary">
+                        View My Work
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+                <!-- Social Links -->
+                <div class="flex gap-6 mt-8 animate-fade-in-up delay-500">
+                    <a href="#" class="social-link" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual relative">
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre class="code-content"><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">"Anit Shrestha"</span>,
+  <span class="code-property">role</span>: <span class="code-string">"Frontend Developer"</span>,
+  <span class="code-property">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Vue"</span>, <span class="code-string">"TypeScript"</span>],
+  <span class="code-property">passion</span>: <span class="code-string">"Building amazing UIs"</span>,
+  <span class="code-property">ready</span>: <span class="code-keyword">true</span>
+};</code></pre>
+                </div>
+                <div class="floating-element element-1">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="floating-element element-2">
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="floating-element element-3">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="section-title">About Me</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Get to know the person behind the code
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="about-image relative">
+                    <div class="image-wrapper">
+                        <img src="assets/images/frontend journey.png" alt="Anit Shrestha" class="profile-image">
+                        <div class="image-placeholder" style="display: none;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="number">3+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h3 class="text-2xl font-bold mb-4">Frontend Developer based in Nepal</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        I'm a passionate Frontend Developer with expertise in building modern, responsive, and user-friendly web applications. I love turning complex problems into simple, beautiful interface solutions.
+                    </p>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the developer community.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="50">50+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number" data-target="30">30+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="section-title">Skills & Technologies</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Technologies I work with to bring ideas to life
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Frontend Skills -->
+                <div class="skills-category">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <i class="fas fa-code text-accent"></i>
+                        Frontend
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Next.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Nuxt</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">SASS/SCSS</span>
+                    </div>
+                </div>
+                <!-- Tools & Others -->
+                <div class="skills-category">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <i class="fas fa-tools text-accent"></i>
+                        Tools & Others
+                    </h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Webpack</span>
+                        <span class="skill-tag">Vite</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">npm</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Tech Stack Icons -->
+            <div class="mt-16">
+                <p class="text-center text-gray-400 mb-8">Tech Stack</p>
+                <div class="flex flex-wrap justify-center gap-8 tech-icons">
+                    <div class="tech-icon" data-tooltip="HTML5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="JavaScript">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="React">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Vue">
+                        <i class="fab fa-vuejs"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Node.js">
+                        <i class="fab fa-node"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Git">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="tech-icon" data-tooltip="Figma">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="section-title">Featured Projects</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Some of my recent work
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart text-4xl"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                        <p class="text-gray-400 text-sm mb-4">A full-featured online shopping platform with cart, checkout, and payment integration.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-tasks text-4xl"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                        <p class="text-gray-400 text-sm mb-4">Collaborative task management tool with real-time updates and team features.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line text-4xl"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="text-xl font-bold mb-2">Analytics Dashboard</h3>
+                        <p class="text-gray-400 text-sm mb-4">Interactive data visualization dashboard with charts and real-time data.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>D3.js</span>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 4 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-comments text-4xl"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="text-xl font-bold mb-2">Real-time Chat App</h3>
+                        <p class="text-gray-400 text-sm mb-4">Modern messaging application with rooms, emojis, and file sharing.</p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 5 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-hotel text-4xl"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="text-xl font-bold mb-2">Hotel Booking System</h3>
+                        <p class="text-gray-400 text-sm mb-4">Complete booking solution with room selection, payment, and admin panel.</p>
+                        <div class="project-tags">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 6 -->
+                <div class="project-card group">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-newspaper text-4xl"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="#" class="project-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="text-xl font-bold mb-2">News Portal</h3>
+                        <p class="text-gray-400 text-sm mb-4">Content-rich news website with categories, search, and subscription.</p>
+                        <div class="project-tags">
+                            <span>Next.js</span>
+                            <span>Headless CMS</span>
+                            <span>GraphQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="section-header text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                    <span class="section-title">Get In Touch</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Have a project in mind? Let's talk!
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="contact-info">
+                    <h3 class="text-2xl font-bold mb-6">Let's Connect</h3>
+                    <p class="text-gray-400 mb-8">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Email</p>
+                                <p class="font-medium">anitshrestha10@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Location</p>
+                                <p class="font-medium">Kathmandu, Nepal</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">Phone</p>
+                                <p class="font-medium">+977 9803057499</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-8">
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">
+                            Send Message
+                            <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-400">
+                    &copy; 2024 <span class="text-accent">Anit Shrestha</span>. All rights reserved.
+                </p>
+                <p class="text-gray-400">
+                    Made with <i class="fas fa-heart text-red-500"></i> and lots of <i class="fas fa-coffee"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
